@@ -40,6 +40,7 @@ p {
     font-style: italic;
     padding: 0.5em;
     margin: 0.5em;
+    font-size: x-large;
 }
 
 h3{
@@ -216,7 +217,16 @@ max-width: 100%;
 /*Promociones*/
 
 .article-promo,figure {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 2rem;
+    width: 40vw;}
 }
 
+.contenedor-promo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
