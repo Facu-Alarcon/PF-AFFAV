@@ -195,7 +195,6 @@ max-width: 100%;
     grid-gap: 20px;
 }
 
-/* Estilo para los elementos de la galería */
 .contenedor-galeria {
     display: flex;
     flex-direction: row;
@@ -212,6 +211,12 @@ max-width: 100%;
     padding: 2rem;
     margin: 2rem;
     width: 40vw;
+}
+
+/*Promociones*/
+
+.article-promo,figure {
+
 }
 
 }
