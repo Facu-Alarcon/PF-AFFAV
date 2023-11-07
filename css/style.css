@@ -63,7 +63,7 @@ footer{
 
 /* MOVIL */
 
-@media (max-width: 420px){
+@media (max-width: 320px){
 
 /*Inicio*/
 .Inicio-contenedor1{
@@ -109,7 +109,7 @@ footer{
 }
 
 /* TABLET */
-@media (min-width: 421px) and (max-width: 1023px) {
+@media (max-width:720px) {
 
 /*Inicio*/
 
@@ -118,7 +118,21 @@ footer{
 }
 
 /* Galeria*/
+.grid-container {
+    grid-template-columns: 1fr;
+}
 
+/* Estilo para los elementos de la galería */
+.contenedor-galeria {
+    background-color: #f9f9f9;
+    max-width: 90% !important;
+}
+
+.contenedor-galeria figure {
+    padding: 2rem;
+    margin: 2rem;
+    width: 70vw !important;
+}
 
 }
 
