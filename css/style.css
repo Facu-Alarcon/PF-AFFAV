@@ -216,13 +216,13 @@ max-width: 100%;
 
 /*Promociones*/
 
-.article-promo,figure {
+.article-promo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2rem;
     margin: 2rem;
-    width: 40vw;}
+    width: 60vw;}
 }
 
 .contenedor-promo{
