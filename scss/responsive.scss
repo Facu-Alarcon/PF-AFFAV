@@ -1,91 +1,18 @@
-@media (max-width: 320px){
+
+
+/* TABLET */
+@media (max-width:720px) {
 
     /*Inicio*/
-    .grid-container {
-        grid-template-columns: 1fr; 
-        gap: 10px; 
-    }
-    .Inicio-contenedor1{
-        display: flex;
-        flex-direction: column;
-    }
-    #carouselExampleCaptions{
-        max-width: 100%;
-        height: auto     !important;
-        
-    }
-    
-    #img-inicio-promo{
-        width: 100vw;
-        height: 40vh;
-    }
-    
-    /*Galeria*/
-    
-    .grid-galeria {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-    }
-    
-    .contenedor-galeria {
-        margin: 0.5rem;
-        max-width: 100%;
-    }
-    
-    .contenedor-galeria figure {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1vh;
-        margin-bottom: 2vh;
-        max-width: 100%;
-    }
 
-    /* Contacto */
-    .formulario {
-        margin: 0 10px;
-        max-width: 100%; 
-        margin: auto; /* Centra el formulario */
+    .grid-container-i{
+        grid-template-columns: repeat(2, 1fr);
+        /* Espacio entre las columnas */
     }
-
-    .section-redes {
-        display: flex;
-        justify-content: center; 
-        div {
-        width: 30px; 
-        height: 30px;
-        margin: 1rem; 
-    }
-    
-    }
-        /*Nosotros*/
-        .section-nosotros-1{
-            text-align: center;
-            p{
-                font-size: medium;
-                text-align: center;
-                text-wrap: 100;
-            }
-            h2{
-                text-align: center;
-            }
-        }
-    
-    
-    footer{
-        p{
-            font-size: medium;
-        }
-    }
-}
-    
-    /* TABLET */
-    @media (max-width:720px) {
-    
-    /*Inicio*/
 
     .grid-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-/*Aplica para galeria tambien*/
 
     /* Contacto */
     .formulario {
@@ -100,167 +27,126 @@
         display: flex;
         justify-content: center;
         transition: all 0.3s ease-in-out;
+
         div {
-        width: 40px;
-        height: 40px;
-        margin: 1.5rem;
-        transition: all 0.3s ease-in-out;
+            width: 40px;
+            height: 40px;
+            margin: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+
     }
 
-}
-    
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna */
+    }
+
     .contenedor-galeria {
-        background-color: #f9f9f9;
-        max-width: 90% !important;
+        max-width: 100% !important;
+        justify-content: center;
         figure {
-            padding: 2rem;
-            margin: 2rem;
-            width: 70vw !important;
-        }
-    }
-        /*Nosotros*/
-        .section-nosotros-1{
-            text-align: center;
-            p{
-                font-size: medium;
-                text-align: center;
-                text-wrap: 100;
-            }
-            h2{
-                text-align: center;
-            }
-        }
-    
-    }
-
-/* Desktop */
-
-@media (min-width: 1024px) {
-    /* Inicio */
-    
-    #Inicio-de-pagina{
-    max-width: 100%;
-    }
-    
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20px; /* Espacio entre las columnas */
-    }
-    
-    .Inicio-contenedor1 {
-        border: 1px solid #303030;
-        padding: 10px;
-        text-align: center; 
-        img {
-        max-width: 100%; 
-        height: auto; 
-        }
-
-        figcaption {
-            margin: 10px 0; 
-            font-weight: bold; 
-        }
-    }
-    
-    
-    
-    /*Promociones-Inicio*/
-    
-    #promo-inicio{
-        display: flex;
-        justify-content: center;
-        margin: 2rem;
-    }
-    
-    #carouselExampleCaptions{
-        max-width: 50vw;
-        margin: 2rem;
-        max-height: 60vh !important;
-        justify-content: center;
-        
-    }
-    
-    
-    /* Galeria*/
-    
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
-    }
-    
-    .contenedor-galeria {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-        background-color: #f9f9f9;
-        max-width: 100%;
-
-        figure {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 2rem;
-            margin: 2rem;
-            width: 40vw;
-        }
-    }
-    /*Promociones*/
-    
-    .article-promo {
-        figure{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 2rem;
-            margin: 2rem;
-            width: 40vw;}  
-        }
-    
-    
-    .contenedor-promo{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* Contacto */
-    .formulario {
-        margin: 0 auto; 
-        max-width: 60%;
-    }
-
-    .section-redes {
-        display: flex;
-        justify-content: center;
-        div {
-            width: 50px; 
-            height: 50px; 
             margin: 1rem;
-            }
+            padding: 1rem;
+            width: 100% !important;
+        }
     }
 
     /*Nosotros*/
-    .section-nosotros-1{
+    .section-nosotros-1 {
         text-align: center;
-        p{
+
+        p {
             font-size: medium;
             text-align: center;
             text-wrap: 100;
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
     }
 
-    
+}
 
-    footer{
-        p{
-            font-size: x-large;
+@media (max-width: 420px) {
+
+    /*Inicio*/
+    .grid-container-i {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .Inicio-contenedor1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #carouselExampleCaptions {
+        max-width: 100%;
+        height: auto !important;
+
+    }
+
+    #img-inicio-promo {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    /*Galeria*/
+
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna */
+    }
+
+    .contenedor-galeria {
+        justify-content: center;
+        margin: 0.5rem;
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            img{
+                width: auto;
+            }
+        }
+
+    }
+
+
+    .section-redes {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 30px;
+            height: 30px;
+            margin: 1rem;
+        }
+
+    }
+
+    /*Nosotros*/
+    .section-nosotros-1 {
+        text-align: center;
+
+        p {
+            font-size: medium;
+            text-align: center;
+            text-wrap: 100;
+        }
+
+        h2 {
+            text-align: center;
         }
     }
 
+
+    footer {
+        p {
+            font-size: medium;
+        }
+    }
 }
