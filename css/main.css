@@ -1,232 +1,278 @@
-*{
-    padding: 0;
-    margin: 0;
-    bottom: 0;
-}
-
+@charset "UTF-8";
 /* Font-Family*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 /*Final de Font*/
-
-/*
-font-family: 'Raleway', sans-serif;
-*/
-
-
-body{
-background-color: whitesmoke;
+* {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
 }
 
-nav{
-    background-color: rgb(221, 221, 221);
+body {
+  background-color: whitesmoke;
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out forwards;
 }
 
-
-nav li a { 
-    color: rgb(0, 0, 0) !important;
-    font-size: large;
-    font-family: 'Raleway', sans-serif !important;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav {
+  background-color: rgb(221, 221, 221);
+}
+nav li a {
+  color: rgb(0, 0, 0) !important;
+  font-size: large;
+  font-family: "Raleway", sans-serif !important;
 }
 
-h1{
-    font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: xx-large;
 }
-
-
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    padding: 0.5em;
-    margin: 0.5em;
-    font-size: x-large;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: x-large;
 }
 
-h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    font-style: oblique;
-    text-align: center;
-    margin: 2rem;
-
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: x-large;
+  font-style: oblique;
+  text-align: center;
+  margin: 2rem;
 }
 
-
-footer{
-    background-color: rgba(0, 0, 0, 0);
-    font-family: 'Times New Roman';
-    font-style: oblique;
-    text-align: center;
-    color: rgb(0, 0, 0);
-
+footer {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Times New Roman";
+  font-style: oblique;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
-/* MOVIL */
-
-@media (max-width: 320px){
-
-/*Inicio*/
-.Inicio-contenedor1{
+@media (max-width: 320px) {
+  /*Inicio*/
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .Inicio-contenedor1 {
     display: flex;
     flex-direction: column;
-}
-
-.grid-container {
-    grid-template-columns: 1fr; 
-    gap: 10px; 
-
-#carouselExampleCaptions{
+  }
+  #carouselExampleCaptions {
     max-width: 100%;
-    height: auto     !important;
-    
-}
-
-#img-inicio-promo{
+    height: auto !important;
+  }
+  #img-inicio-promo {
     width: 100vw;
     height: 40vh;
-}
-
-/*Galeria*/
-
-.grid-galeria {
+  }
+  /*Galeria*/
+  .grid-galeria {
     grid-template-columns: 1fr; /* Cambia a una sola columna */
-}
-
-.contenedor-galeria {
+  }
+  .contenedor-galeria {
     margin: 0.5rem;
     max-width: 100%;
-}
-
-.contenedor-galeria figure {
+  }
+  .contenedor-galeria figure {
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
     margin-bottom: 2vh;
     max-width: 100%;
+  }
+  /* Contacto */
+  .formulario {
+    margin: 0 10px;
+    max-width: 100%;
+    margin: auto; /* Centra el formulario */
+  }
+  .section-redes {
+    display: flex;
+    justify-content: center;
+  }
+  .section-redes div {
+    width: 30px;
+    height: 30px;
+    margin: 1rem;
+  }
+  /*Nosotros*/
+  .section-nosotros-1 {
+    text-align: center;
+  }
+  .section-nosotros-1 p {
+    font-size: medium;
+    text-align: center;
+    text-wrap: 100;
+  }
+  .section-nosotros-1 h2 {
+    text-align: center;
+  }
+  footer p {
+    font-size: medium;
+  }
 }
-
-
-}
-
 /* TABLET */
-@media (max-width:720px) {
-
-/*Inicio*/
-
-.grid-container {
-    grid-template-columns: 1fr; 
-}
-
-/* Galeria*/
-.grid-container {
+@media (max-width: 720px) {
+  /*Inicio*/
+  .grid-container {
     grid-template-columns: 1fr;
-}
-
-/* Estilo para los elementos de la galería */
-.contenedor-galeria {
+  }
+  /*Aplica para galeria tambien*/
+  /* Contacto */
+  .formulario {
+    margin: 0 20px;
+    max-width: 80%;
+    margin: auto;
+    /* Agrega una animación de transición */
+    transition: all 0.3s ease-in-out;
+  }
+  .section-redes {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-redes div {
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .contenedor-galeria {
     background-color: #f9f9f9;
     max-width: 90% !important;
-}
-
-.contenedor-galeria figure {
+  }
+  .contenedor-galeria figure {
     padding: 2rem;
     margin: 2rem;
     width: 70vw !important;
+  }
+  /*Nosotros*/
+  .section-nosotros-1 {
+    text-align: center;
+  }
+  .section-nosotros-1 p {
+    font-size: medium;
+    text-align: center;
+    text-wrap: 100;
+  }
+  .section-nosotros-1 h2 {
+    text-align: center;
+  }
 }
-
-}
-
-
 /* Desktop */
-}
 @media (min-width: 1024px) {
-
-/* Inicio */
-
-#Inicio-de-pagina{
-max-width: 100%;
-}
-
-.grid-container {
+  /* Inicio */
+  #Inicio-de-pagina {
+    max-width: 100%;
+  }
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Espacio entre las columnas */
-}
-
-.Inicio-contenedor1 {
+  }
+  .Inicio-contenedor1 {
     border: 1px solid #303030;
     padding: 10px;
-    text-align: center; 
-}
-
-.Inicio-contenedor1 img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-.Inicio-contenedor1 figcaption {
-    margin: 10px 0; 
-    font-weight: bold; 
-}
-
-
-/*Promociones-Inicio*/
-
-#promo-inicio{
+    text-align: center;
+  }
+  .Inicio-contenedor1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .Inicio-contenedor1 figcaption {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  /*Promociones-Inicio*/
+  #promo-inicio {
     display: flex;
     justify-content: center;
     margin: 2rem;
-}
-
-#carouselExampleCaptions{
+  }
+  #carouselExampleCaptions {
     max-width: 50vw;
     margin: 2rem;
     max-height: 60vh !important;
     justify-content: center;
-    
-}
-
-
-/* Galeria*/
-
-.grid-container {
+  }
+  /* Galeria*/
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-}
-
-.contenedor-galeria {
+  }
+  .contenedor-galeria {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     background-color: #f9f9f9;
     max-width: 100%;
-}
-
-.contenedor-galeria figure {
+  }
+  .contenedor-galeria figure {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2rem;
     margin: 2rem;
     width: 40vw;
-}
-
-/*Promociones*/
-
-.article-promo,figure {
+  }
+  /*Promociones*/
+  .article-promo figure {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2rem;
     margin: 2rem;
-    width: 40vw;}
-}
-
-.contenedor-promo{
+    width: 40vw;
+  }
+  .contenedor-promo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  /* Contacto */
+  .formulario {
+    margin: 0 auto;
+    max-width: 60%;
+  }
+  .section-redes {
+    display: flex;
+    justify-content: center;
+  }
+  .section-redes div {
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+  }
+  /*Nosotros*/
+  .section-nosotros-1 {
+    text-align: center;
+  }
+  .section-nosotros-1 p {
+    font-size: medium;
+    text-align: center;
+    text-wrap: 100;
+  }
+  .section-nosotros-1 h2 {
+    text-align: center;
+  }
+  footer p {
+    font-size: x-large;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

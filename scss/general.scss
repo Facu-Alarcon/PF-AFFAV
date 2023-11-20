@@ -1,0 +1,72 @@
+
+    /* Font-Family*/
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    /*Final de Font*/
+
+*{
+    padding: 0;
+    margin: 0;
+    bottom: 0
+}
+
+// En tu archivo SCSS
+
+body {
+    background-color: whitesmoke;
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+
+    nav{
+        background-color: rgb(221, 221, 221);
+
+        li { 
+            a {
+                color: rgb(0, 0, 0) !important;
+                font-size: large;
+                font-family: 'Raleway', sans-serif !important;
+            }
+
+        }
+    }
+
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: xx-large;
+    }
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-style: italic;
+        padding: 0.5em;
+        margin: 0.5em;
+        font-size: x-large;
+    }
+
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+        font-style: oblique;
+        text-align: center;
+        margin: 2rem;
+    
+    }
+    
+    
+    footer{
+        background-color: rgba(0, 0, 0, 0);
+        font-family: 'Times New Roman';
+        font-style: oblique;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }    
