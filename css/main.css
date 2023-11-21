@@ -111,24 +111,8 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem;
-  margin: 4rem;
-  width: 40vw;
-}
-
-/*Promociones*/
-.article-promo figure {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 2rem;
   margin: 2rem;
   width: 40vw;
-}
-
-.contenedor-promo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 /* Contacto */
@@ -160,6 +144,23 @@ h3 {
   text-align: center;
 }
 
+/*Promo*/
+.contenedor-promo-1 {
+  display: flex;
+}
+
+.article-promo figure {
+  max-width: auto;
+}
+
+.contenedor-promo-2 p {
+  font-size: medium;
+}
+.contenedor-promo-2 div li {
+  font-size: medium;
+}
+
+/*Promociones*/
 footer {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Times New Roman";
@@ -224,6 +225,18 @@ footer p {
   }
   .section-nosotros-1 h2 {
     text-align: center;
+  }
+  /*Promo*/
+  .contenedor-promo-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-promo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-promo figure {
+    max-width: auto;
   }
 }
 @media (max-width: 420px) {

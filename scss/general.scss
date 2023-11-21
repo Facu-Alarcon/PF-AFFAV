@@ -1,9 +1,8 @@
+/* Font-Family*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/*Final de Font*/
 
-    /* Font-Family*/
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-    /*Final de Font*/
-
-*{
+* {
     padding: 0;
     margin: 0;
     bottom: 0
@@ -18,181 +17,191 @@ body {
 
 @keyframes fadeIn {
     from {
-    opacity: 0;
+        opacity: 0;
     }
+
     to {
-    opacity: 1;
+        opacity: 1;
     }
 }
 
 
-    nav{
-        background-color: rgb(221, 221, 221);
+nav {
+    background-color: rgb(221, 221, 221);
 
-        li { 
-            a {
-                color: rgb(0, 0, 0) !important;
-                font-size: large;
-                font-family: 'Raleway', sans-serif !important;
-            }
-
+    li {
+        a {
+            color: rgb(0, 0, 0) !important;
+            font-size: large;
+            font-family: 'Raleway', sans-serif !important;
         }
+
+    }
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: x-large;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    text-align: center;
+    margin: 2rem;
+
+}
+
+/* Inicio */
+
+#Inicio-de-pagina {
+    max-width: 100%;
+}
+
+.grid-container-i {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+.Inicio-contenedor1 {
+    border: 1px solid #303030;
+    padding: 10px;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
-    h1{
-        font-family: 'Raleway', sans-serif;
-        font-size: xx-large;
+    figcaption {
+        margin: 10px 0;
+        font-weight: bold;
     }
+}
+
+
+
+/*Promociones-Inicio*/
+
+#promo-inicio {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#carouselExampleCaptions {
+    max-width: 50vw;
+    margin: 2rem;
+    max-height: 60vh !important;
+    justify-content: center;
+
+}
+
+
+/* Galeria*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100% !important;
+
+    figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 2rem;
+        width: 40vw;
+    }
+}
+
+
+
+/* Contacto */
+.formulario {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.section-redes {
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+    }
+}
+
+/*Nosotros*/
+.section-nosotros-1 {
+    text-align: center;
 
     p {
-        font-family: 'Raleway', sans-serif;
-        font-style: italic;
-        padding: 0.5em;
-        margin: 0.5em;
-        font-size: x-large;
-    }
-
-    h3{
-        font-family: 'Raleway', sans-serif;
-        font-size: x-large;
-        font-style: oblique;
+        font-size: medium;
         text-align: center;
-        margin: 2rem;
-    
+        text-wrap: 100;
     }
 
-    /* Inicio */
-
-    #Inicio-de-pagina {
-        max-width: 100%;
-    }
-
-    .grid-container-i{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        /* Espacio entre las columnas */
-    }
-
-    .Inicio-contenedor1 {
-        border: 1px solid #303030;
-        padding: 10px;
+    h2 {
         text-align: center;
+    }
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+/*Promo*/
+.contenedor-promo-1 {
+    display: flex;
+}
 
-        figcaption {
-            margin: 10px 0;
-            font-weight: bold;
-        }
+.article-promo {
+    figure {
+        max-width: auto;
+    }
+}
+
+.contenedor-promo-2 {
+    p {
+        font-size: medium;
     }
 
-
-
-    /*Promociones-Inicio*/
-
-    #promo-inicio {
-        display: flex;
-        justify-content: center;
-        margin: 2rem;
-    }
-
-    #carouselExampleCaptions {
-        max-width: 50vw;
-        margin: 2rem;
-        max-height: 60vh !important;
-        justify-content: center;
-
-    }
-
-
-    /* Galeria*/
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
-    }
-
-    .contenedor-galeria {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-        max-width: 100% !important;
-
-        figure {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 1rem;
-            margin: 4rem;
-            width: 40vw;
-        }
-    }
-
-    /*Promociones*/
-
-    .article-promo {
-        figure {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 2rem;
-            margin: 2rem;
-            width: 40vw;
-        }
-    }
-
-
-    .contenedor-promo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* Contacto */
-    .formulario {
-        margin: 0 auto;
-        max-width: 60%;
-    }
-
-    .section-redes {
-        display: flex;
-        justify-content: center;
-
-        div {
-            width: 50px;
-            height: 50px;
-            margin: 1rem;
-        }
-    }
-
-    /*Nosotros*/
-    .section-nosotros-1 {
-        text-align: center;
-
-        p {
+    div {
+        li {
             font-size: medium;
-            text-align: center;
-            text-wrap: 100;
-        }
-
-        h2 {
-            text-align: center;
         }
     }
+}
 
-    footer{
-        background-color: rgba(0, 0, 0, 0);
-        font-family: 'Times New Roman';
-        font-style: oblique;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        p {
-            font-size: large;
-        }
-    } 
+/*Promociones*/
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Times New Roman';
+    font-style: oblique;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    p {
+        font-size: large;
+    }
+}
