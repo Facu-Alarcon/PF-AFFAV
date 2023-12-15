@@ -71,17 +71,17 @@
     }
 
     /*Promo*/
-    .contenedor-promo-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
     .article-promo {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
 
         figure {
-            max-width: auto;
+            max-width: 100%; 
+            margin-bottom: 1rem; 
+        }
+
+        .contenedor-promo-2 {
+            margin-top: 1rem; 
         }
     }
 }

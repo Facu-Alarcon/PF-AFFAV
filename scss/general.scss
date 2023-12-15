@@ -219,6 +219,48 @@ h2 {
 }
 
 /*Promociones*/
+.contenedor-promo-1 {
+    display: flex;
+    margin-bottom: 3rem; /* Espacio entre promociones */
+}
+
+.article-promo {
+    display: flex;
+    align-items: center;
+
+    figure {
+        max-width: 40%;
+        max-height: 100%;
+        margin-right: 1.5rem; /* Espacio entre la imagen y el texto */
+    }
+
+    .contenedor-promo-2 {
+        flex: 1;
+        text-align: center;
+        background-color: #f8f8f8;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        font-size: $font-size-1;
+        font-style: italic;
+        margin: 0.1rem;
+    }
+
+    div {
+        margin-top: 1rem; /* Espaciado entre la lista y el párrafo anterior */
+
+        li {
+            font-size: $font-size-1;
+            margin-bottom: 0.1rem; 
+            list-style-type: circle;
+        }
+    }
+}
+
+
 
 
 footer {
