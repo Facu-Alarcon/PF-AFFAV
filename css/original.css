@@ -30,7 +30,7 @@ nav li a {
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
+    font-size: $font-size-3;
 }
 
 

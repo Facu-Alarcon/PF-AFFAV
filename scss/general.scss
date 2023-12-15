@@ -2,17 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 /*Final de Font*/
 
+// Variables para tamaños de fuente
+$font-size-1: medium;
+$font-size-2: x-large;
+$font-size-3: xx-large;
+
+@mixin text-styles {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-1;
+    color: #000000;
+}
+
 * {
     padding: 0;
     margin: 0;
-    bottom: 0
+    bottom: 0;
 }
-
 
 body {
     background-color: whitesmoke;
     opacity: 0;
     animation: fadeIn 0.2s ease-in-out forwards;
+    @include text-styles;
+
 }
 
 @keyframes fadeIn {
@@ -31,40 +43,39 @@ nav {
 
     li {
         a {
-            color: rgb(0, 0, 0) !important;
-            font-size: large;
-            font-family: 'Raleway', sans-serif !important;
+            @include text-styles;
+            transition: transform 0.5s ease-in-out;
+            padding: 1rem;
+            margin: 0.5rem;
         }
-        
+
         &:hover {
             transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
         }
 
     }
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
+    @include text-styles;
+    font-size: $font-size-3;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+    @include text-styles;
+    font-size: $font-size-2;
     font-style: italic;
     padding: 0.5em;
     margin: 0.5em;
-    font-size: x-large;
 }
 
-h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
+h2 {
+    @include text-styles;
+    font-size: $font-size-2;
     font-style: oblique;
-    text-align: center;
     margin: 2rem;
-
 }
+
 
 /* Inicio */
 
@@ -112,6 +123,17 @@ h3 {
     justify-content: center;
 
 }
+
+.h3-carrusel {
+    background-color: rgba(206, 24, 24, 0.144);
+    color: white;
+}
+
+.p-carrusel {
+    background-color: rgba(206, 24, 24, 0.144);
+    color: white;
+}
+
 
 
 /* Galeria*/
@@ -163,7 +185,7 @@ h3 {
     text-align: center;
 
     p {
-        font-size: medium;
+        font-size: $font-size-1;
         text-align: center;
         text-wrap: 100;
     }
@@ -186,12 +208,12 @@ h3 {
 
 .contenedor-promo-2 {
     p {
-        font-size: medium;
+        font-size: $font-size-1;
     }
 
     div {
         li {
-            font-size: medium;
+            font-size: $font-size-1;
         }
     }
 }

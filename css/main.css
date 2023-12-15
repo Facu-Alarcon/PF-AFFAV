@@ -12,6 +12,9 @@ body {
   background-color: whitesmoke;
   opacity: 0;
   animation: fadeIn 0.2s ease-in-out forwards;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #000000;
 }
 
 @keyframes fadeIn {
@@ -26,33 +29,40 @@ nav {
   background-color: rgb(221, 221, 221);
 }
 nav li a {
-  color: rgb(0, 0, 0) !important;
-  font-size: large;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #000000;
+  transition: transform 0.5s ease-in-out;
+  padding: 1rem;
+  margin: 0.5rem;
 }
 nav li:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
 }
 
 h1 {
   font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #000000;
   font-size: xx-large;
 }
 
 p {
   font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #000000;
+  font-size: x-large;
   font-style: italic;
   padding: 0.5em;
   margin: 0.5em;
-  font-size: x-large;
 }
 
-h3 {
+h2 {
   font-family: "Raleway", sans-serif;
+  font-size: medium;
+  color: #000000;
   font-size: x-large;
   font-style: oblique;
-  text-align: center;
   margin: 2rem;
 }
 
@@ -94,6 +104,16 @@ h3 {
   margin: 2rem;
   max-height: 60vh !important;
   justify-content: center;
+}
+
+.h3-carrusel {
+  background-color: rgba(206, 24, 24, 0.144);
+  color: white;
+}
+
+.p-carrusel {
+  background-color: rgba(206, 24, 24, 0.144);
+  color: white;
 }
 
 /* Galeria*/
@@ -178,6 +198,9 @@ footer p {
 
 /* TABLET */
 @media (max-width: 720px) {
+  .navbar-collapse {
+    justify-content: center;
+  }
   /*Inicio*/
   .grid-container-i {
     grid-template-columns: repeat(2, 1fr);
@@ -278,10 +301,6 @@ footer p {
   }
   .contenedor-galeria figure img {
     width: auto;
-  }
-  .section-redes {
-    display: flex;
-    justify-content: center;
   }
   .section-redes div {
     width: 30px;
