@@ -168,22 +168,6 @@ h2 {
   text-align: center;
 }
 
-/*Promo*/
-.contenedor-promo-1 {
-  display: flex;
-}
-
-.article-promo figure {
-  max-width: auto;
-}
-
-.contenedor-promo-2 p {
-  font-size: medium;
-}
-.contenedor-promo-2 div li {
-  font-size: medium;
-}
-
 /*Promociones*/
 .contenedor-promo-1 {
   display: flex;
